@@ -1,0 +1,136 @@
+/* Pink theme for:
+   .page, .app, .controls, .status, .result
+*/
+
+:root{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.page{
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at top, #ffe6f1 0%, #ffd0e3 45%, #ffc1db 100%);
+}
+
+
+/* Main card */
+.app{
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 22px;
+
+  border-radius: 18px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(255,255,255,0.7);
+  box-shadow: 0 18px 40px rgba(255, 20, 147, 0.15);
+
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.app h1{
+  margin: 0 0 14px;
+  color: #7a1f4c;
+  font-size: 26px;
+  letter-spacing: 0.2px;
+}
+
+/* Input + button row */
+.controls{
+  display:flex;
+  gap:10px;
+  margin: 12px 0 10px;
+}
+
+.controls input{
+  flex:1;
+  padding: 12px 14px;
+  border-radius: 12px;
+
+  border: 1px solid #f2a9c7;
+  outline: none;
+
+  background: #fff;
+  color: #3b0a24;
+  font-size: 14px;
+}
+
+.controls input::placeholder{
+  color:#a85a79;
+}
+
+.controls input:focus{
+  border-color:#ff4fa3;
+  box-shadow: 0 0 0 4px rgba(255, 79, 163, 0.18);
+}
+
+/* Button */
+.controls button{
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+
+  background: linear-gradient(135deg, #ff4fa3 0%, #ff2f87 50%, #ff5fb3 100%);
+  box-shadow: 0 10px 18px rgba(255, 47, 135, 0.25);
+
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.controls button:hover{
+  transform: translateY(-1px);
+}
+
+.controls button:active{
+  transform: translateY(0px);
+}
+
+/* Status line (messages / errors) */
+.status{
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  color: #7a1f4c;
+  background: #fff1f7;
+  border: 1px solid #ffd0e3;
+}
+
+/* Result box */
+.result{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #fff6fb 100%);
+  border: 1px solid #ffd0e3;
+  text-align: left;
+}
+
+.result h2{
+  margin: 0 0 8px;
+  color: #7a1f4c;
+  font-size: 18px;
+}
+
+.result p{
+  margin: 6px 0;
+  color: #6b1a40;
+  font-weight: 600;
+}
+
+.result b{
+  color:#ff2f87;
+}
